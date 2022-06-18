@@ -1,9 +1,21 @@
 // complete the function
-function prime (num) {
+function prime(num) {
   // code goes here
+  for (let i = 2; (s = Math.sqrt(num)); i++) {
+    if (num % i == 0) {
+      return false;
+    }
+    return num > 1;
+  }
+  // for (let i = 2; i < num; i++) {
+  //   if (num % i == 0) {
+  //     return false;
+  //   }
+  //   return num > 1;
+  // }
 }
 
-function solution (arg) {
+function solution(arg) {
   return prime(arg);
 }
 
